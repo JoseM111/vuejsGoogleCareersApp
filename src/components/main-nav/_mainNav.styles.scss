@@ -1,0 +1,35 @@
+/* mainNav.styles.scss */
+// ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
+// scss variables
+$custom-text-shadow: 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee,
+  4px 3px 1px #ccc;
+
+// ⚫️⚫️☰☰☰☰☰☰☰☰
+.navContainer {
+  @apply fixed top-0 left-0 w-full h-16 bg-white drop-shadow-lg;
+
+  // ⚫️⚫️☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
+  .navBar {
+    @apply flex flex-nowrap h-full px-8 mx-auto
+    border-b border-solid border-brand-gray-1;
+  }
+
+  .companyNameLink {
+    @apply flex items-center h-full
+    text-xl text-[#5A6CAB];
+  }
+
+  .companyNameLink {
+    text-shadow: $custom-text-shadow;
+  }
+
+  .navRightLinks {
+    @apply flex items-center h-full py-2.5 font-medium
+    text-violet-700 hover:text-[#778FFB];
+  }
+
+  .navRightLinks {
+    text-shadow: $custom-text-shadow;
+  }
+}
+// ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰

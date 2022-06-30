@@ -1,0 +1,23 @@
+/* actionButton.styles.scss */
+// ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
+// scss variables
+$custom-text-shadow: 1px 2px 1px #eee, 3px 2px 1px #ccc, 2px 3px 1px #eee,
+4px 3px 1px #ccc;
+
+// ⚫️⚫️☰☰☰☰☰☰☰☰
+.btn {
+  @apply cursor-pointer px-5 py-1
+  font-medium text-violet-700 border-0
+  rounded drop-shadow-lg bg-violet-50
+  hover:bg-[#778FFB] hover:opacity-30
+  hover:text-white active:opacity-10;
+}
+
+.btnText {
+  text-shadow: $custom-text-shadow;
+
+  &:hover {
+    text-shadow: none;
+  }
+}
+// ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
