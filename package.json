@@ -8,7 +8,8 @@
     "preview": "vite preview",
     "node": "node src/playground.js",
     "test": "vitest",
-    "test:unit": "vitest run --coverage"
+    "test:unit": "vitest run --coverage",
+    "webstorm-integration": "vitest --watch --reporter=dot --reporter=json --outputFile=.vitest-result.json"
   },
   "dependencies": {
     "@vue/test-utils": "^2.0.0",
