@@ -34,4 +34,22 @@ describe("MainNav", () => {
       "Jobs",
     ]);
   });
+
+  /* =============================
+   *       log in & out test
+   *  ============================= */
+  describe("when the user is logged out", () => {
+    // test log in
+    it("should prompt the user to log in", () => {
+      const mainNavWrapper = mount(MainNav, {
+        data() {
+          return {
+            isLoggedIn: false,
+          };
+        },
+      });
+
+      const loginButton = mainNavWrapper.findComponent("ActionButton");
+    });
+  });
 });

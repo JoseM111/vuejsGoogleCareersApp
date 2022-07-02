@@ -1,14 +1,16 @@
 <script>
+import ProfileImage from "../../components/profile-image/ProfileImage.vue";
 import ActionButton from "../../components/action-button/ActionButton.vue";
 
 export default {
   name: "MainNav",
-  components: { ActionButton },
+  components: { ActionButton, ProfileImage },
   props: {},
   data() {
     return {
       company: "Destiny Under Sacrifice Careers",
       url: "https://careers.google.com",
+      isLoggedIn: false,
       menuItems: [
         "Teams",
         "Locations",
@@ -51,7 +53,8 @@ export default {
 
         <!-- action-button -->
         <div class="flex items-center h-full ml-auto">
-          <ActionButton />
+	        <ProfileImage v-if="isLoggedIn" />
+          <ActionButton v-else />
         </div>
       </div>
     </div>
