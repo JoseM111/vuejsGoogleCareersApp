@@ -5,7 +5,7 @@ export default {
   props: {},
   data() {
     return {
-      imageURL: "../../src/assets/images/Alias111.JPG",
+      imageURL: "../../src/assets/images/LinkedInProfilePic.jpg",
     };
   },
   methods: {},
