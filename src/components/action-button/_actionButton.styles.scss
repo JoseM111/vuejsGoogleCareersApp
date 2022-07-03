@@ -1,11 +1,16 @@
 /* actionButton.styles.scss */
 // ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰
+$custom-text-shadow: drop-shadow(2px 5px 5px #908e96);
 // ⚫️⚫️☰☰☰☰☰☰☰☰
 .btn {
   @apply cursor-pointer px-5 py-1
   font-medium text-white border-0
-  rounded drop-shadow-lg bg-[#686181]
+  rounded bg-[#686181]
   hover:bg-[#778FFB] hover:opacity-30
   hover:text-white active:opacity-10;
+}
+
+.btn {
+  filter: $custom-text-shadow;
 }
 // ☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰

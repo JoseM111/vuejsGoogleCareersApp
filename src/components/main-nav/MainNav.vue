@@ -58,7 +58,7 @@ export default {
         <div class="flex items-center h-full ml-auto">
           <!-- profile-image -->
           <template v-if="isLoggedIn">
-            <ProfileImage data-test="profile-image" />
+            <ProfileImage data-test="profile-image" @click="loginUser" />
           </template>
 
           <!-- action-button -->
