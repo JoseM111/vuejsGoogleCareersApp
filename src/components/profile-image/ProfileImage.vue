@@ -5,8 +5,7 @@ export default {
   props: {},
   data() {
     return {
-      imageURL: "https://www.pngitem.com/pimgs/m/487-4876417" +
-	      "_link-head-png-toon-link-face-png-transparent.png",
+      imageURL: "../../src/assets/images/Alias111.JPG",
     };
   },
   methods: {},
@@ -16,7 +15,9 @@ export default {
 </script>
 <!-- ======================================================== -->
 <template>
-  <img :src="imageURL" alt="IMAGE NOT FOUND" class="imageStyles">
+  <div class="imageStyles">
+    <img :src="imageURL" alt="IMAGE NOT FOUND" />
+  </div>
 </template>
 <!-- ======================================================== -->
 <style lang="scss">

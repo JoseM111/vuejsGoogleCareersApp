@@ -21,7 +21,11 @@ export default {
       ],
     };
   },
-  methods: {},
+  methods: {
+    loginUser() {
+      this.isLoggedIn = !this.isLoggedIn;
+    },
+  },
   computed: {},
   watch: {},
 };
@@ -51,10 +55,19 @@ export default {
           </ul>
         </nav>
 
-        <!-- action-button -->
         <div class="flex items-center h-full ml-auto">
-	        <ProfileImage v-if="isLoggedIn" />
-          <ActionButton v-else />
+          <!-- profile-image -->
+          <template v-if="isLoggedIn">
+            <ProfileImage data-test="profile-image" />
+          </template>
+
+          <!-- action-button -->
+          <template v-else>
+            <ActionButton
+	            data-test="action-button"
+	            @click="loginUser"
+            />
+          </template>
         </div>
       </div>
     </div>
