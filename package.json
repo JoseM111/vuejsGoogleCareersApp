@@ -9,7 +9,8 @@
     "node": "node src/playground.js",
     "test": "vitest",
     "test:unit": "vitest run --coverage",
-    "webstorm-integration": "vitest --watch --reporter=dot --reporter=json --outputFile=.vitest-result.json"
+    "webstorm-integration": "vitest --watch --reporter=dot --reporter=json --outputFile=.vitest-result.json",
+    "test:ui": "npx vitest watch --ui --threads false"
   },
   "dependencies": {
     "@vue/test-utils": "^2.0.0",
