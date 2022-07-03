@@ -59,7 +59,7 @@ describe("MainNav", () => {
         let profileImage = mainNavWrapper.find("[data-test='profile-image']");
         // checking if the component exist
         expect(profileImage.exists()).toBe(false);
-      
+       
         const loginButton = mainNavWrapper.find("[data-test='login-button']");
         // trigger simulates an action/event & is async
         await loginButton.trigger("click")
